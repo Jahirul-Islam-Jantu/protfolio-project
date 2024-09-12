@@ -1,10 +1,19 @@
 function submitHandler(){
-    let checkbox1 = document.querySelector('#checkbox1').value
-    let checkbox2 = document.querySelector('#checkbox2').value
+    let webpage = document.querySelectorAll("input[name='webPage']")
+    let developer = document.querySelectorAll("input[name='developer']")
 
-    let jsonObj = {
-        webPage = checkbox1,
-        developer = checkbox2
+    for (i=0; i<webpage.length; i++){
+        if(webpage[i].checked)
+            alert(webpage[i].value)
     }
-    alert(JSON.stringify(jsonObj))
+    for (i=0; i<developer.length; i++){
+        if(developer[i].checked)
+            alert(developer[i].value)
+    }
+
+    // let jsonObj = {
+    //         webpage = webpage,
+    //         developer = developer,
+    // }
+    // alert(JSON.stringify(jsonObj))
 }
