@@ -39,7 +39,7 @@
         </div>
         <div class="check">
           <h2>What type of Developer do you need?</h2>
-          <div class="checkbox" id="checkbox2">
+          <div class="checkbox">
             <form id="myForm">
               <label>
                 <input type="radio" name="developer" value="front-end" />
@@ -57,21 +57,25 @@
               ><br /><br />
               <h2>What kind of WebPage do you need?</h2>
               <label>
-                <input type="radio" name="webPage" value="webPage1" />
+                <input type="radio" name="webPage" value="Landing-Page" />
                 Landing Page</label
               ><br /><br />
 
               <label>
-                <input type="radio" name="webPage" value="webPage2" /> Web
+                <input type="radio" name="webPage" value="Web-Application" /> Web
                 Application</label
               ><br /><br />
 
               <label>
-                <input type="radio" name="webPage" value="webPage3" /> Static
+                <input type="radio" name="webPage" value="Static-Web-Page" /> Static
                 Web Page</label
               >
               <br /><br />
             </form>
+            <div class="mail">
+              <label for="email">Email: </label>
+              <input type="email" id="email" placeholder="Enter your Email">
+            </div>
           </div>
         </div>
         <button id="submit" type="button" onclick="getRadioValue()">

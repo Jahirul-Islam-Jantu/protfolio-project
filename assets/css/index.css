@@ -44,12 +44,11 @@ a {
 
 .checkbox {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 
-#checkbox1 {
-  margin-bottom: 1.5rem;
-}
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -143,3 +142,19 @@ label {
   justify-content: center;
   align-items: center;
 }
+.mail{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#email{
+  border: 1px solid #724c09;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px 15px;
+  background: transparent;
+  color: #ff924e;
+}
+
