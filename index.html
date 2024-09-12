@@ -1,27 +1,47 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <title>Jahir's Workshop</title>
 </head>
 <body>
-    <div class="container">
+    <div class="home-container">
         <div class="header">
             <div class="navbar">
-                <div class="logo-area">
-                    <img src="./assets/images/Jahir'sWorkshop.png" alt="logo">
-                    <h3>Jahir's Workshop</h3>
+                <div class="logo-area" >
+                    <a href="index.html"><img src="./assets/images/Jahir'sWorkshop.png" alt="logo"> <h3>Jahir's <span>Workshop</span></h3></a>
                 </div>
-                <div class="nav">
+                <div class="nav home">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="./others-pages/about.html">About Us</a></li>
-                        <li><a href="./others-pages/projects.html">Projects</a></li>
+                        <li><a href="others-pages/services.html">Projects</a></li>
                         <li><a href="./others-pages/contact.html">Contacts</a></li>
                     </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hero-area">
+            <h1><span>Hey!</span></h1>
+            <marque>What are you looking for?</marque>
+            <div class="checkbox">
+                <div class="check">
+                    <input type="radio" id="landing-page" name="webPage" value="landing-page"  />
+                    <label for="landing-page">Landing Page</label>
+                </div>
+
+                <div class="check">
+                    <input type="radio" id="web-application" name="webPage" value="web-application" />
+                    <label for="web-application">Web Application</label>
+                </div>
+
+                <div class="check">
+                    <input type="radio" id="staticPage" name="webPage" value="staticPage" />
+                    <label for="staticPage">Static Web Page</label>
                 </div>
             </div>
         </div>
