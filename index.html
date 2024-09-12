@@ -19,31 +19,58 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="./others-pages/about.html">About Us</a></li>
-                        <li><a href="others-pages/services.html">Projects</a></li>
+                        <li><a href="others-pages/services.html">Services</a></li>
                         <li><a href="./others-pages/contact.html">Contacts</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="hero-area">
-            <h1><span>Hey!</span></h1>
-            <marque>What are you looking for?</marque>
-            <div class="checkbox">
-                <div class="check">
-                    <input type="radio" id="landing-page" name="webPage" value="landing-page"  />
-                    <label for="landing-page">Landing Page</label>
-                </div>
+            <div>
+                <h1><span>Hey!</span> What are you looking for?</h1>
+            </div>
+            <div class="check">
+                <div class="checkbox" id="checkbox1">
+                    <h2>Are you looking for a .... </h2>
+                    <div class="check">
+                        <input type="radio" id="landing-page" name="webPage" value="landing-page"  />
+                        <label for="landing-page">Landing Page</label>
+                    </div>
 
-                <div class="check">
-                    <input type="radio" id="web-application" name="webPage" value="web-application" />
-                    <label for="web-application">Web Application</label>
-                </div>
+                    <div class="check">
+                        <input type="radio" id="web-application" name="webPage" value="web-application" />
+                        <label for="web-application">Web Application</label>
+                    </div>
 
-                <div class="check">
-                    <input type="radio" id="staticPage" name="webPage" value="staticPage" />
-                    <label for="staticPage">Static Web Page</label>
+                    <div class="check">
+                        <input type="radio" id="staticPage" name="webPage" value="staticPage" />
+                        <label for="staticPage">Static Web Page</label>
+                    </div>
+                </div>
+                <div class="checkbox" id="checkbox2">
+                    <h2>Are you interested in a .... </h2>
+
+                        <input type="radio" id="fullTime" name="developer" value="fullTime"  />
+                        <label for="fullTime">Salary based Developer</label>
+
+
+
+                        <input type="radio" id="partTime" name="developer" value="partTime" />
+                        <label for="partTime">Project based Developer</label>
+
+
+
+                        <input type="radio" id="contract" name="developer" value="contract" />
+                        <label for="contract">Contractual based Developer</label>
+
                 </div>
             </div>
+            <button id="submit" onclick="submitHandler">Submit</button>
+
+
+        </div>
+        <div class="contact">
+
         </div>
     </div>
 </body>
