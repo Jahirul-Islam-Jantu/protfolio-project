@@ -1,19 +1,16 @@
-function submitHandler(){
-    let webpage = document.querySelectorAll("input[name='webPage']")
-    let developer = document.querySelectorAll("input[name='developer']")
+function getRadioValue() {
+  console.log("hello");
+  const form = document.querySelector("#myForm");
+  const selectedValue = form.querySelector(
+    'input[name="developer"]:checked'
+  ).value;
+  const selectedValue2 = form.querySelector(
+    'input[name="webPage"]:checked'
+  ).value;
+  const jsonObj = {
+    developer: selectedValue,
+    webPage: selectedValue2,
+  };
 
-    for (i=0; i<webpage.length; i++){
-        if(webpage[i].checked)
-            alert(webpage[i].value)
-    }
-    for (i=0; i<developer.length; i++){
-        if(developer[i].checked)
-            alert(developer[i].value)
-    }
-
-    // let jsonObj = {
-    //         webpage = webpage,
-    //         developer = developer,
-    // }
-    // alert(JSON.stringify(jsonObj))
+  alert(JSON.stringify(jsonObj));
 }

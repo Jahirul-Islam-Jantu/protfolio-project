@@ -1,71 +1,83 @@
-<!doctype html>
-<html lang="en" >
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/css/index.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <script src="./assets/js/main.js" defer></script>
     <title>Jahir's Workshop</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="home-container">
-        <div class="header">
-            <div class="navbar">
-                <div class="logo-area" >
-                    <a href="index.html"><img src="./assets/images/Jahir'sWorkshop.png" alt="logo"> <h3>Jahir's <span>Workshop</span></h3></a>
-                </div>
-                <div class="nav home">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="./others-pages/about.html">About Us</a></li>
-                        <li><a href="others-pages/services.html">Services</a></li>
-                        <li><a href="./others-pages/contact.html">Contacts</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="header">
+        <div class="navbar">
+          <div class="logo-area">
+            <a href="index.html"
+              ><img src="./assets/images/Jahir'sWorkshop.png" alt="logo" />
+              <h3>Jahir's <span>Workshop</span></h3></a
+            >
+          </div>
+          <div class="nav home">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="./others-pages/about.html">About Us</a></li>
+              <li><a href="others-pages/services.html">Services</a></li>
+              <li><a href="./others-pages/contact.html">Contacts</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="hero-area">
-            <div class="text">
-                <h1><span>Hey!</span>Are you looking for a website for you?</h1>
-                <h1>then what are you looking for?</h1>
-                <h1>Choose the right one.</h1>
-            </div>
-            <div class="check">
-                    <h2>Are you looking for a .... </h2>
-                <div class="checkbox" id="checkbox1">
-                    <form>
-                        <input type="radio" id="landing-page" name="webPage" value="webPage1"  />
-                        <label for="landing-page">Landing Page</label>
-
-                        <input type="radio" id="web-application" name="webPage" value="webPage2" />
-                        <label for="web-application">Web Application</label>
-
-                        <input type="radio" id="staticPage" name="webPage" value="webPage3" />
-                        <label for="staticPage">Static Web Page</label>
-                    </form>
-                </div>
-                    <h2>Are you interested in a .... </h2>
-                <div class="checkbox" id="checkbox2">
-                    <form>
-                        <input type="radio" id="fullTime" name="developer" value="developer1"  />
-                        <label for="fullTime">Salary based Developer</label>
-
-                        <input type="radio" id="partTime" name="developer" value="developer2" />
-                        <label for="partTime">Project based Developer</label>
-
-                        <input type="radio" id="contract" name="developer" value="developer3" />
-                        <label for="contract">Contractual based Developer</label>
-                    </form>
-                </div>
-            </div>
-            <button id="submit" onclick="submitHandler()">submit</button>
-
-
+      </div>
+      <div class="hero-area">
+        <div class="text">
+          <h1><span>Hey!</span>Are you looking for a website for you?</h1>
+          <h1>then what are you looking for?</h1>
+          <h1>Choose the right one.</h1>
         </div>
-        <div class="contact">
-            <button id="message" >Direct Message</button>
+        <div class="check">
+          <h2>What type of Developer do you need?</h2>
+          <div class="checkbox" id="checkbox2">
+            <form id="myForm">
+              <label>
+                <input type="radio" name="developer" value="front-end" />
+                Front-End
+              </label>
+              <br /><br />
+              <label>
+                <input type="radio" name="developer" value="back-end" />
+                Back-End
+              </label>
+              <br /><br />
+              <label>
+                <input type="radio" name="developer" value="full-stack" />
+                Full-Stack </label
+              ><br /><br />
+              <h2>What kind of WebPage do you need?</h2>
+              <label>
+                <input type="radio" name="webPage" value="webPage1" />
+                Landing Page</label
+              ><br /><br />
+
+              <label>
+                <input type="radio" name="webPage" value="webPage2" /> Web
+                Application</label
+              ><br /><br />
+
+              <label>
+                <input type="radio" name="webPage" value="webPage3" /> Static
+                Web Page</label
+              >
+              <br /><br />
+            </form>
+          </div>
         </div>
+        <button id="submit" type="button" onclick="getRadioValue()">
+          Submit
+        </button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
