@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background: #eae9e9
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    margin-top: 12rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    background: #c7c6c6;
+    padding: 10px 0px;
+    margin-bottom: 3rem
+}
+.footer p{
+    color: #724c09;
+
+}
