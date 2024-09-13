@@ -85,10 +85,12 @@ body{
     justify-content: center;
     border: 1px solid transparent;
     background: #c7c6c6;
-    padding: 10px 0px
+    padding: 10px 0px;
+    margin-bottom: 2rem;
 }
 .footer p{
     color: #724c09;
+
 }
 
 
