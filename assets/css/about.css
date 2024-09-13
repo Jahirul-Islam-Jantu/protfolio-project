@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.about{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.about h1{
+    color: #ff924e;
+    font-size: 3rem;
+    border-bottom: 0.2rem solid #ff924e;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to top, rgba(201, 31, 31, 0.38), #724c09);
+    padding: 15px 100px
+}
+.about p{
+    color: #724c09;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    width: 70%;
+}
