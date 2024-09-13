@@ -1,59 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../assets/css/index.css">
-    <link rel="stylesheet" href="../assets/css/contact.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/contact.css" />
 
     <title>Jahir's Workshop</title>
-</head>
-<body>
-<div class="container">
-    <div class="header">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
         <div class="navbar">
-            <div class="logo-area">
-                <a href="../index.html"><img src="../assets/images/Jahir'sWorkshop.png" alt="logo"> <h3>Jahir's <span>Workshop</span></h3></a>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="./contact.html">Contacts</a></li>
-                </ul>
-            </div>
+          <div class="logo-area">
+            <a href="../index.html"
+              ><img src="../assets/images/Jahir'sWorkshop.png" alt="logo" />
+              <h3>Jahir's <span>Workshop</span></h3></a
+            >
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="./contact.html">Contacts</a></li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <div class="contact-section">
+      </div>
+      <div class="contact-section">
         <h2>Contact With Us</h2>
-        <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Type your full name">
-            <label for="mail">Email</label>
-            <input type="email" id="mail" placeholder="Type your Email">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" placeholder="Type your phone">
-            <label for="message">Type your Message</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <button type="submit" onclick="submitHandler()">Submit</button>
-        </form>
+        <div class="formElement">
+          <label for="name"
+            >Name
+            <input type="text" id="name" placeholder="Type your full name" />
+          </label>
+          <label for="mail"
+            >Email
+            <input type="email" id="mail" placeholder="Type your Email" />
+          </label>
+          <label for="phone"
+            >Phone
+            <input type="tel" id="phone" placeholder="Type your phone" />
+          </label>
+          <label for="message"
+            >Type your Message
+            <textarea name="message" id="message" cols="40" rows="5"></textarea>
+          </label>
+        </div>
+        <button type="submit" id="submit" onclick="submitHandler()">
+          Submit
+        </button>
+      </div>
+      <h2 id="showResult"></h2>
+
+      <div class="footer">
+        <p>
+          All rights reserved <span>&copy</span>
+          <strong>Jahirul Islam</strong> 2024
+        </p>
+      </div>
     </div>
-    <div class="result">
-        <p id="showResult"></p>
-    </div>
 
-
-
-
-
-    <div class="footer">
-        <p>All rights reserved <span>&copy</span> <strong>Jahirul Islam</strong> 2024</p>
-    </div>
-</div>
-
-<script src="../assets/js/contact.js" defar></script>
-</body>
+    <script src="../assets/js/contact.js" defar></script>
+  </body>
 </html>
