@@ -27,6 +27,33 @@ body {
   flex-direction: column;
   margin-bottom: 5rem;
 }
+label {
+  color: #724c09;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+input {
+  width: 300px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #724c09;
+  padding: 5px;
+  color: #724c09;
+  font-size: 1rem;
+}
+input:active {
+  border: none;
+  border-bottom: 2px solid #724c09;
+}
+textarea {
+  background: transparent;
+  border: 2px solid #724c09;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
 
 #showResult {
   display: flex;
