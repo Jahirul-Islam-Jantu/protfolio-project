@@ -1,67 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../assets/css/index.css">
-    <link rel="stylesheet" href="../assets/css/about.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/about.css" />
     <title>Jahir's Workshop</title>
-</head>
-<body>
-<div class="container">
-<!--    Header Section      -->
-    <div class="header">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <header class="header">
         <div class="navbar">
-            <div class="logo-area">
-                <a href="../index.html"><img src="../assets/images/Jahir'sWorkshop.png" alt="logo"> <h3>Jahir's <span>Workshop</span></h3></a>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="./contact.html">Contacts</a></li>
-                </ul>
-            </div>
-
+          <a class="logo-area" href="../index.html">
+            <img src="../assets/images/Jahir'sWorkshop.png" alt="logo" />
+            <h3>Jahir's <span>Workshop</span></h3>
+          </a>
+          <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="./contact.html">Contacts</a></li>
+            </ul>
+          </nav>
         </div>
-    </div>
-<!--  About Section  -->
-    <div class="about">
-        <div class="skills">
-            <div class="info">
-                <h1>Information about me</h1>
-                <p>Name: Jahirul Islam</p>
-                <p>Profile: Full Stack Developer</p>
-                <p>Email: jahirulislam001@yahoo.com</p>
-                <p>Phone: +8801773427087</p>
-            </div>
-            <div class="skill">
-                <h1>Skills: </h1>
-                <div class="skill-prg">
-                    <label> HTML: 90%
-                    <progress value="90" max="100">90%</progress>
-                    </label>
-                    <label>CSS: 85%<progress value="80" max="100">85%</progress></label>
-                    <label>Bootstrap: 85%<progress value="80" max="100">85%</progress></label>
-                    <label>JavaScript: 70%<progress value="70" max="100">70%</progress></label>
-                    <label>React: 70%<progress value="70" max="100">70%</progress></label>
+      </header>
 
-                </div>
+      <!-- About Section -->
+      <main class="about">
+        <section class="skills">
+          <div class="info">
+            <h1>Information about me</h1>
+            <p>Name: Jahirul Islam</p>
+            <p>Profile: Full Stack Developer</p>
+            <p>Email: jahirulislam001@yahoo.com</p>
+            <p>Phone: +8801773427087</p>
+          </div>
+          <div class="skill">
+            <h1>Skills:</h1>
+            <div class="skill-prg">
+              <label>
+                HTML: 90%
+                <progress value="90" max="100">90%</progress>
+              </label>
+              <label>
+                CSS: 85%
+                <progress value="85" max="100">85%</progress>
+              </label>
+              <label>
+                Bootstrap: 85%
+                <progress value="85" max="100">85%</progress>
+              </label>
+              <label>
+                JavaScript: 70%
+                <progress value="70" max="100">70%</progress>
+              </label>
+              <label>
+                React: 70%
+                <progress value="70" max="100">70%</progress>
+              </label>
             </div>
-        </div>
-        <div class="about-me">
-            <h2>About Me</h2>
-            <p>“Hi there! I’m <strong>Jahirul Islam</strong>, a passionate <span>MERN stack developer</span>.” It's been 2 years i have been serving my passioniate service to my clients with pleasure. From the struggling period of my career to now i am serving on Front-End, Back-End and Full-Stack projects. I have a Good understanding and Expertise over MongoDB, Express Js, React Js, Node Js . To good with raw HTML, CSS, JavaScript. famillier with any kind of CSS Frameworks to impleament on your project.  </p>
-            <p>So Let's build your project, and start your journey on tech industry with me.</p>
-        </div>
-    </div>
-    <div class="footer">
-        <p>All rights reserved <span>&copy</span> <strong>Jahirul Islam</strong> 2024</p>
+          </div>
+        </section>
+        <section class="about-me">
+          <h2>About Me</h2>
+          <p>
+            “Hi there! I’m <strong>Jahirul Islam</strong>, a passionate
+            <span>MERN stack developer</span>.” It's been 2 years I have been
+            serving my passionate service to my clients with pleasure. From the
+            struggling period of my career to now, I am serving on Front-End,
+            Back-End, and Full-Stack projects. I have a good understanding and
+            expertise over MongoDB, Express JS, React JS, and Node JS. I am also
+            good with raw HTML, CSS, and JavaScript. Familiar with any kind of
+            CSS frameworks to implement on your project.
+          </p>
+          <p>
+            So let's build your project, and start your journey in the tech
+            industry with me.
+          </p>
+        </section>
+      </main>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <p>
+          All rights reserved <span>&copy;</span>
+          <strong>Jahirul Islam</strong> 2024
+        </p>
+      </footer>
     </div>
 
-</div>
-</body>
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector(".nav");
+        nav.classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>

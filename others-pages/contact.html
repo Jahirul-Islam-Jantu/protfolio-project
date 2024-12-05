@@ -2,70 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="../assets/css/index.css" />
     <link rel="stylesheet" href="../assets/css/contact.css" />
-
+    <script src="../assets/js/contact.js" defer></script>
     <title>Jahir's Workshop</title>
   </head>
   <body>
     <div class="container">
+      <!-- Header Section -->
       <div class="header">
         <div class="navbar">
-          <div class="logo-area">
-            <a href="../index.html"
-              ><img src="../assets/images/Jahir'sWorkshop.png" alt="logo" />
-              <h3>Jahir's <span>Workshop</span></h3></a
-            >
-          </div>
-          <div class="nav">
+          <a class="logo-area" href="../index.html">
+            <img src="../assets/images/Jahir'sWorkshop.png" alt="logo" />
+            <h3>Jahir's <span>Workshop</span></h3>
+          </a>
+          <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+          <nav class="nav">
             <ul>
               <li><a href="../index.html">Home</a></li>
               <li><a href="./about.html">About Us</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="./contact.html">Contacts</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
       </div>
+
+      <!-- Contact Section -->
       <div class="contact-section">
         <h2>Contact With Us</h2>
-        <div class="formElement">
-          <label for="name"
-            >Name
+        <form id="contactForm" class="form-element">
+          <label for="name">
+            Name
             <input type="text" id="name" placeholder="Type your full name" />
           </label>
-          <label for="mail"
-            >Email
-            <input type="email" id="mail" placeholder="Type your Email" />
+          <label for="mail">
+            Email
+            <input type="email" id="mail" placeholder="Type your email" />
           </label>
-          <label for="phone"
-            >Phone
+          <label for="phone">
+            Phone
             <input type="tel" id="phone" placeholder="Type your phone" />
           </label>
-          <label for="message"
-            >Type your Message
-            <textarea name="message" id="message" cols="64" rows="5"></textarea>
+          <label for="message">
+            Type your message
+            <textarea id="message" cols="30" rows="5"></textarea>
           </label>
-        </div>
-        <button type="submit" id="submit" onclick="submitHandler()">
-          Submit
-        </button>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+        <h2 id="showResult"></h2>
       </div>
-      <h2 id="showResult"></h2>
 
+      <!-- Footer Section -->
       <div class="footer">
         <p>
-          All rights reserved <span>&copy</span>
+          All rights reserved <span>&copy;</span>
           <strong>Jahirul Islam</strong> 2024
         </p>
       </div>
     </div>
-
-    <script src="../assets/js/contact.js" defar></script>
   </body>
 </html>

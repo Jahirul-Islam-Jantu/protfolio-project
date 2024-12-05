@@ -1,16 +1,15 @@
-function submitHandler() {
+function toggleMenu() {
+  const nav = document.querySelector(".nav");
+  nav.classList.toggle("active");
+}
+
+document.getElementById("contactForm").addEventListener("submit", (e) => {
+  e.preventDefault();
   const name = document.querySelector("#name").value;
   const email = document.querySelector("#mail").value;
   const phone = document.querySelector("#phone").value;
   const message = document.querySelector("#message").value;
-  let result = document.querySelector("#showResult");
 
-  const jsonObj = {
-    name: name,
-    email: email,
-    phone: phone,
-    message: message,
-  };
-  result.innerHTML = JSON.stringify(jsonObj);
-  alert(JSON.stringify(jsonObj));
-}
+  const result = document.querySelector("#showResult");
+  result.textContent = `Name: ${name}, Email: ${email}, Phone: ${phone}, Message: ${message}`;
+});

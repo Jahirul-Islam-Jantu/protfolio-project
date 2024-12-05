@@ -7,7 +7,7 @@ function getRadioValue() {
   const selectedValue2 = form.querySelector(
     'input[name="webPage"]:checked'
   ).value;
-  const input = document.querySelector('#email').value
+  const input = document.querySelector("#email").value;
   const jsonObj = {
     developer: selectedValue,
     webPage: selectedValue2,
@@ -16,3 +16,8 @@ function getRadioValue() {
 
   alert(JSON.stringify(jsonObj));
 }
+// Toggle navigation on smaller screens
+document.querySelector(".nav-toggle").addEventListener("click", () => {
+  const nav = document.querySelector(".nav");
+  nav.classList.toggle("active");
+});

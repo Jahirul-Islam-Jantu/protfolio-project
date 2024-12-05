@@ -1,90 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../assets/css/index.css">
-    <link rel="stylesheet" href="../assets/css/projects.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/projects.css" />
     <title>Jahir's Workshop</title>
-</head>
-<body>
-<div class="container">
-    <div class="header">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
         <div class="navbar">
-            <div class="logo-area">
-                <a href="../index.html"><img src="../assets/images/Jahir'sWorkshop.png" alt="logo"> <h3>Jahir's <span>Workshop</span></h3></a>
+          <a class="logo-area" href="../index.html">
+            <div>
+              <img src="../assets/images/Jahir'sWorkshop.png" alt="logo" />
             </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="./contact.html">Contacts</a></li>
-                </ul>
+            <div>
+              <h3>Jahir's <span>Workshop</span></h3>
             </div>
+          </a>
+          <button class="nav-toggle" aria-label="toggle menu">☰</button>
+          <div class="nav">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./contact.html">Contacts</a></li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <div class="services">
+      </div>
+      <div class="services">
         <h1>Websites we build</h1>
         <div class="websites">
-            <div class="landing-page">
-                <img src="../assets/images/landing.jpg" alt="">
-                <div class="card-title">
-                    <h4>Landing Page</h4>
-                    <p>We Creates ready to use landing pages as per client's requirement at a minimum price</p>
-                    <p><span>Price starts from $100</span></p>
-                </div>
+          <div class="card landing-page">
+            <img src="../assets/images/landing.jpg" alt="Landing Page" />
+            <div class="card-title">
+              <h4>Landing Page</h4>
+              <p>
+                We create ready-to-use landing pages as per client's
+                requirements at a minimum price.
+              </p>
+              <p><span>Price starts from $100</span></p>
             </div>
-            <div class="web-app">
-                <img src="../assets/images/webApp.png" alt="">
-                <div class="card-title">
-                    <h4>Web Application</h4>
-                    <p>We Creates Web Applications as per client's requirement at a minimum price</p>
-                    <p><span>Price starts from $500</span></p>
-                </div>
+          </div>
+          <div class="card web-app">
+            <img src="../assets/images/webApp.png" alt="Web App" />
+            <div class="card-title">
+              <h4>Web Application</h4>
+              <p>
+                We create web applications as per client's requirements at a
+                minimum price.
+              </p>
+              <p><span>Price starts from $500</span></p>
             </div>
+          </div>
         </div>
-
-            <h1>Developers we provide</h1>
-            <div class="developers">
-                <div class="front-end">
-                    <img src="../assets/images/front-end.png" alt="">
-                    <div class="card-details">
-                        <h4>Front-End Developer</h4>
-                        <p>Highly Qualified and most experienced Front-End Developer</p>
-                    </div>
-                </div>
-                <div class="back-end">
-                    <img src="../assets/images/backEnd.webp" alt="">
-                    <div class="card-details">
-                        <h4>Back-End Developer</h4>
-                        <p>Highly Qualified and most experienced Back-End Developer</p>
-                    </div>
-                </div>
-                <div class="full-stack">
-                    <img src="../assets/images/fullStack.jpg" alt="">
-                    <div class="card-details">
-                        <h4>Full Stack Developer</h4>
-                        <p>Highly Qualified and most experienced Full Stack Developer</p>
-                    </div>
-                </div>
+        <h1>Developers we provide</h1>
+        <div class="developers">
+          <div class="card front-end">
+            <img
+              src="../assets/images/front-end.png"
+              alt="Front-End Developer"
+            />
+            <div class="card-details">
+              <h4>Front-End Developer</h4>
+              <p>Highly qualified and experienced front-end developers.</p>
             </div>
-
-
+          </div>
+          <div class="card back-end">
+            <img src="../assets/images/backEnd.webp" alt="Back-End Developer" />
+            <div class="card-details">
+              <h4>Back-End Developer</h4>
+              <p>Highly qualified and experienced back-end developers.</p>
+            </div>
+          </div>
+          <div class="card full-stack">
+            <img
+              src="../assets/images/fullStack.jpg"
+              alt="Full Stack Developer"
+            />
+            <div class="card-details">
+              <h4>Full Stack Developer</h4>
+              <p>Highly qualified and experienced full-stack developers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          All rights reserved <span>&copy;</span>
+          <strong>Jahirul Islam</strong> 2024
+        </p>
+      </div>
     </div>
+    <script>
+      const navToggle = document.querySelector(".nav-toggle");
+      const nav = document.querySelector(".nav");
 
-
-
-
-
-
-
-
-    <div class="footer">
-        <p>All rights reserved <span>&copy</span> <strong>Jahirul Islam</strong> 2024</p>
-    </div>
-</div>
-</body>
+      navToggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>

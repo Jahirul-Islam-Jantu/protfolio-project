@@ -13,75 +13,71 @@
   </head>
   <body>
     <div class="home-container">
-      <div class="header">
-        <div class="navbar">
-          <div class="logo-area">
-            <a href="index.html"
-              ><img src="./assets/images/Jahir'sWorkshop.png" alt="logo" />
-              <h3>Jahir's <span>Workshop</span></h3></a
-            >
-          </div>
+      <header class="header">
+        <nav class="navbar">
+          <a class="logo-area" href="index.html">
+            <div>
+              <img src="./assets/images/Jahir'sWorkshop.png" alt="logo" />
+            </div>
+            <div>
+              <h3>Jahir's <span>Workshop</span></h3>
+            </div>
+          </a>
+          <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
           <div class="nav home">
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="./others-pages/about.html">About Us</a></li>
-              <li><a href="others-pages/services.html">Services</a></li>
+              <li><a href="./others-pages/services.html">Services</a></li>
               <li><a href="./others-pages/contact.html">Contacts</a></li>
             </ul>
           </div>
-        </div>
-      </div>
-      <div class="hero-area">
+        </nav>
+      </header>
+      <section class="hero-area">
         <div class="text">
-          <h1><span>Hey!</span>Are you looking for a website for you?</h1>
-          <h1>then what are you looking for?</h1>
+          <h1><span>Hey!</span> Are you looking for a website for you?</h1>
+          <h1>Then what are you waiting for?</h1>
           <h1>Choose the right one.</h1>
         </div>
         <div class="check">
           <h2>What type of Developer do you need?</h2>
-          <div class="checkbox">
-            <form id="myForm">
-              <label>
-                <input type="radio" name="developer" value="front-end" />
-                Front-End
-              </label>
-              <br /><br />
-              <label>
-                <input type="radio" name="developer" value="back-end" />
-                Back-End
-              </label>
-              <br /><br />
-              <label>
-                <input type="radio" name="developer" value="full-stack" />
-                Full-Stack </label
-              ><br /><br />
-              <h2>What kind of WebPage do you need?</h2>
-              <label>
-                <input type="radio" name="webPage" value="Landing-Page" />
-                Landing Page</label
-              ><br /><br />
-
-              <label>
-                <input type="radio" name="webPage" value="Web-Application" /> Web
-                Application</label
-              ><br /><br />
-
-              <label>
-                <input type="radio" name="webPage" value="Static-Web-Page" /> Static
-                Web Page</label
-              >
-              <br /><br />
-            </form>
-            <div class="mail">
-              <label for="email">Email: </label>
-              <input type="email" id="email" placeholder="Enter your Email">
-            </div>
+          <form id="myForm">
+            <label>
+              <input type="radio" name="developer" value="front-end" />
+              Front-End </label
+            ><br />
+            <label>
+              <input type="radio" name="developer" value="back-end" />
+              Back-End </label
+            ><br />
+            <label>
+              <input type="radio" name="developer" value="full-stack" />
+              Full-Stack </label
+            ><br />
+            <h2>What kind of WebPage do you need?</h2>
+            <label>
+              <input type="radio" name="webPage" value="Landing-Page" />
+              Landing Page </label
+            ><br />
+            <label>
+              <input type="radio" name="webPage" value="Web-Application" />
+              Web Application </label
+            ><br />
+            <label>
+              <input type="radio" name="webPage" value="Static-Web-Page" />
+              Static Web Page </label
+            ><br />
+          </form>
+          <div class="mail">
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="Enter your Email" />
           </div>
         </div>
         <button id="submit" type="button" onclick="getRadioValue()">
           Submit
         </button>
-      </div>
+      </section>
     </div>
   </body>
 </html>
